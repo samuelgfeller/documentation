@@ -103,3 +103,6 @@ if (!empty($messages)) {
 }
 ```
 
+***
+
+Source: https://phpdevtips.com/2013/05/simple-session-based-flash-messages/
