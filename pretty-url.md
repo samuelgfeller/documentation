@@ -110,7 +110,7 @@ A base.html.php could look like that:
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-[`this is code`](https://this_is_url/)
+	
 <!--   Flash message -->
 <!--   Navigaion --> 
 	
@@ -121,7 +121,7 @@ A base.html.php could look like that:
 </body>
 </html>	
 ```
-[Set up Flash messages](https://github.com/samuelgfeller/documentation/blob/master/flash-message.md)  
-[Example of Navigation](https://github.com/samuelgfeller/documentation/blob/master/css-menu.md) 
+* [Set up Flash messages](https://github.com/samuelgfeller/documentation/blob/master/flash-message.md)  
+* [Example of Navigation](https://github.com/samuelgfeller/documentation/blob/master/css-menu.md) 
 ***
 Source: https://github.com/odan/glossar/blob/master/pretty-url.md
