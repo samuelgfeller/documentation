@@ -1,3 +1,3 @@
-# documentation
+# Documentation
 
-Here are my documentations
+Enjoy
