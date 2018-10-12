@@ -1,7 +1,7 @@
 # PHP Pretty URL
 
 ## Apache forwarding
-Read this article first if you want to have a nice local url: https://github.com/samuelgfeller/documentation/blob/master/virtual-host.md
+Read [this article](https://github.com/samuelgfeller/documentation/blob/master/virtual-host.md) first if you want to have a nice local url.
 ### .htaccess  
 
 Create `.htaccess` file at the root of the project and add the following to redirect to the `public/` folder
@@ -20,6 +20,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^ index.php [QSA,L]
 ```
+## Project 
 ### public/index.php  
 
 The Front-Controller gets the url and gives the path  
@@ -61,7 +62,8 @@ header("HTTP/1.0 404 Not Found");
 echo '404 Not Found';
 ```
 ### ajax_controller.php / controller.php
-The `index.php` calls the ajax_controller first and then the controller. The reason is that the controller.php includes the base.html.php and on ajax request the site structure is not wanted.  
+The `index.php` calls the ajax_controller first and then the controller. The reason is that the controller.php includes the base.html.php and on ajax request the site structure is not wanted.   
+
 **ajax_controller:**
 ```php
 <?php
@@ -92,12 +94,10 @@ if ($path == 'contact/find') {
        exit;
 }	
 ```
-### Example of base.html.php / Loading ressources
-Put the js and css files in the `public/` folder
-And now on the `base.html.php` add
-```html
-<base href="<?php echo baseurl('/', true) ?>">
-```
+### Loading ressources
+Put the js and css files in the `public/` folder and in `base.html.php` add `<base href="<?php echo baseurl('/', true) ?>">`  
+
+### Example of base.html.php  
 A `base.html.php` could look like that:
 ```html
 <!DOCTYPE html>
