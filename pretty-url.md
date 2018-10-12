@@ -96,7 +96,7 @@ if ($path == 'contact/find') {
 Put the js and css files in the `public/` folder
 And now on the `base.html.php` add
 ```html
-    <base href="<?php echo baseurl('/', true) ?>">
+<base href="<?php echo baseurl('/', true) ?>">
 ```
 Now link the ressources like that:
 ```html
