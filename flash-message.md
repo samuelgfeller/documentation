@@ -81,6 +81,25 @@ class Flash {
 }
 ```
 
+### Adding CSS
+
+```css
+/* Message */
+.msg {
+    background: white;
+    text-align: center;
+    color: black;
+}
+
+.success {
+    background-color: #4BB543;
+}
+
+.error {
+    background: #b2180e;
+    color: white;
+}
+```
 
 ### Usage
 
