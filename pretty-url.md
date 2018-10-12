@@ -109,10 +109,9 @@ A base.html.php could look like that:
     <link rel="shortcut icon" href="images/favicon.ico"/>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
-	
-<!--   Flash message -->
-<!--   Navigaion --> 
+<body>	
+    <!--   Flash message -->
+    <!--   Navigaion --> 
 	
     <?php require_once(__DIR__ . "/../controller.php"); ?>
 	
