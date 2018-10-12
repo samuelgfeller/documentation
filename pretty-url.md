@@ -92,21 +92,33 @@ if ($path == 'contact/find') {
        exit;
 }	
 ```
-### Loading ressources
+### Example of base.html.php / Loading ressources
 Put the js and css files in the `public/` folder
 And now on the `base.html.php` add
 ```html
 <base href="<?php echo baseurl('/', true) ?>">
 ```
-Now link the ressources like that:
+A base.html.php could look like that:
 ```html
+<!DOCTYPE html>
+<html>
 <head>
+    <meta charset="utf-8">
+    <title>Masesselin</title>
     <base href="<?php echo baseurl('/', true) ?>">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <script src="main.js"></script>
+<!--    [Flash messages](https://github.com/samuelgfeller/documentation/blob/master/flash-message.md) -->
+<!--    [Navigation](https://github.com/samuelgfeller/documentation/blob/master/css-menu.md) -->
+	
+    <?php require_once(__DIR__ . "/../controller.php"); ?>
+	
+    <script src="js/main.js"></script>
 </body>
+</body>
+</html>	
 ```
 ***
 Source: https://github.com/odan/glossar/blob/master/pretty-url.md
