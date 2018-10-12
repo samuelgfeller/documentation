@@ -1,7 +1,7 @@
 # PHP Pretty URL
 
 ## Apache forwarding
-Read this article first: https://github.com/samuelgfeller/documentation/blob/master/virtual-host.md
+Read this article first if you want to have a nice local url: https://github.com/samuelgfeller/documentation/blob/master/virtual-host.md
 ### .htaccess  
 
 Create `.htaccess` file at the root of the project and add the following to redirect to the `public/` folder
