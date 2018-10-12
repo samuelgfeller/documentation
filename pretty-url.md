@@ -98,7 +98,7 @@ And now on the `base.html.php` add
 ```html
 <base href="<?php echo baseurl('/', true) ?>">
 ```
-A base.html.php could look like that:
+A `base.html.php` could look like that:
 ```html
 <!DOCTYPE html>
 <html>
