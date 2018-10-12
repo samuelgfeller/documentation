@@ -105,9 +105,8 @@ Now link the ressources like that:
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
-
 ```
 ***
 Source: https://github.com/odan/glossar/blob/master/pretty-url.md
