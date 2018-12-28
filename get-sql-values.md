@@ -71,21 +71,21 @@ I wanted to do something to update an entry but I figured out that it was comple
 I keep it just in case because I put work in it and maybe it can be useful in some case
 ```php
 $data = [
-            'nummer' => $artikel->getNummer(),
-            'name' => $artikel->getName(),
-            'kg_price' => $artikel->getKgPrice(),
-            'stueck_gewicht' => $artikel->getStueckGewicht(),
-            'gewicht_1' => $artikel->getGewicht1(),
-            'gewicht_2' => $artikel->getGewicht2(),
-            'gewicht_3' => $artikel->getGewicht3(),
-            'stueckzahl_1' => $artikel->getStueckzahl1(),
-            'stueckzahl_2' => $artikel->getStueckzahl2(),
-            'stueckzahl_3' => $artikel->getStueckzahl3(),
-        ];
-        $colsAndValues = Helper::getSQLColAndValues($data);
-        $updColsAndValsFormatted= [];
-        foreach ($colsAndValues['cols'] as $key => $col){
-            $updColsAndValsFormatted[] = $col.' = '.$colsAndValues['values'][$key];
-        }
-        $query = 'UPDATE artikel SET '.implode(', ', $updColsAndValsFormatted).' WHERE id =' . $artikel->getId();
-   ```
+    'nummer' => $artikel->getNummer(),
+    'name' => $artikel->getName(),
+    'kg_price' => $artikel->getKgPrice(),
+    'stueck_gewicht' => $artikel->getStueckGewicht(),
+    'gewicht_1' => $artikel->getGewicht1(),
+    'gewicht_2' => $artikel->getGewicht2(),
+    'gewicht_3' => $artikel->getGewicht3(),
+    'stueckzahl_1' => $artikel->getStueckzahl1(),
+    'stueckzahl_2' => $artikel->getStueckzahl2(),
+    'stueckzahl_3' => $artikel->getStueckzahl3(),
+];
+$colsAndValues = Helper::getSQLColAndValues($data);
+$updColsAndValsFormatted= [];
+foreach ($colsAndValues['cols'] as $key => $col){
+    $updColsAndValsFormatted[] = $col.' = '.$colsAndValues['values'][$key];
+}
+$query = 'UPDATE artikel SET '.implode(', ', $updColsAndValsFormatted).' WHERE id =' . $artikel->getId();
+```
