@@ -89,3 +89,18 @@ foreach ($colsAndValues['cols'] as $key => $col){
 }
 $query = 'UPDATE artikel SET '.implode(', ', $updColsAndValsFormatted).' WHERE id =' . $artikel->getId();
 ```
+I fixed it like this but I'm not proud of it. There is nothing dynamic like I wanted and the string is surrounded by quotes.
+```php
+$data = [
+    'nummer' => $artikel->getNummer() ?? 'NULL',
+    'name' => '"'.$artikel->getName().'"' ?? 'NULL',
+    'kg_price' => $artikel->getKgPrice() ?? 'NULL',
+    'stueck_gewicht' => $artikel->getStueckGewicht() ?? 'NULL',
+    ...
+];
+$formattedData = [];
+foreach ($data as $col => $val){
+    $formattedData[] = $col.' = '.$val;
+}
+$query = 'UPDATE artikel SET '.implode(', ', $formattedData).' WHERE id =' . $artikel->getId();
+```
