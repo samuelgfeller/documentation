@@ -75,7 +75,7 @@ This is called an expression. Expressions are used to display values on the page
 ```
 
 ### Filters
-`filter` are here to format the data in the view.
+[`filter`](https://docs.angularjs.org/api/ng/filter/filter) are here to format the data in the view.
 AngularJS gets the value of `product.price`.
 It sends this number into the currency filter. The pipe symbol (|) takes the output on the left and "pipes" it to the right.
 The filter outputs a formatted currency with the dollar sign and the correct decimal places. 
@@ -85,4 +85,55 @@ The filter outputs a formatted currency with the dollar sign and the correct dec
 	<p class="date">{{ product.pubdate | date }}</p> 
 ```
 
+### Keywords
+* A **module** contains the different components of an AngularJS app
+* A **controller** manages the app's data
+* An **expression** displays values on the page
+* A **filter** formats the value of an expression
 
+### Loop over data
+`<div ng-repeat="product in products">`. Like `ng-app` and `ng-controller`, the `ng-repeat` is a directive. It loops through an array and displays each element. Here, the `ng-repeat` repeats all the HTML inside `<div class="col-md-6">` for each element in the products array.
+In this way, `ng-repeat` shows both products in the `$scope.products` array. Instead of writing the same HTML twice as before, we just use `ng-repeat` to generate the HTML twice. 
+The `ng-src` is a directive that sets the `<img>` element's src to a property in the controller.
+	
+```html
+<div ng-repeat="product in products" class="col-md-6"> 
+  <div class="thumbnail"> 
+    <img src="img/the-book-of-trees.jpg"> 
+    <p class="title">{{ product.name }}</p> 
+    <p class="price">{{ product.price | currency }}</p> 
+    <p class="date">{{ product.pubdate | date }}</p> 
+    <img ng-src="{{ product.cover }}">
+  </div> 
+</div>
+```
+
+### Events over elements in loop 
+
+#### index.html
+```html
+<div ng-repeat="product in products" class="col-md-6">
+    <div class="thumbnail">
+    	<img ng-src="{{ product.cover }}">
+    	<p class="title">{{ product.name }}</p> 
+	<p class="price">{{ product.price | currency }}</p> 
+	<p class="date">{{ product.pubdate | date }}</p> 
+	<div class="rating">
+    	     <p class="likes" ng-click="plusOne($index)">+{{ product.likes }}</p> 
+	     <p class="dislikes" ng-click="minusOne($index)">{{ product.dislikes }}</p>
+	</div>
+    </div> 
+</div>
+```
+#### MainController.js
+```js
+app.controller('MainController', ['$scope', function($scope) { 
+...
+$scope.plusOne = function(index) { 
+   $scope.products[index].likes += 1; 
+};
+$scope.minusOne = function(index){
+   $scope.products[index].dislikes += 1;
+}
+}]);
+```
