@@ -43,13 +43,13 @@ $mail->prepare('Bill from ' . date('d.m.Y'), $mailBody, $attachmentPath, 'Bill.p
 // Send email
 $mail->send('to@domain.com', 'info@domain.com', 'toName', 'CompanyName');
 unlink($attachmentPath); // Delete file
-
+```
 
 ---
 ### Source
-https://pdfshift.io
-https://github.com/pdfshift/pdfshift-php
-https://github.com/PHPMailer/PHPMailer
-My experience
+https://pdfshift.io  
+https://github.com/pdfshift/pdfshift-php  
+https://github.com/PHPMailer/PHPMailer  
+My experience  
 
 
