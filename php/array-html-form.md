@@ -1,6 +1,6 @@
-## Passing dynamicaly created HTML Form values and use them
+## Passing dynamically created HTML Form values and use them
 
-Client
+**Client**
 ```html
 <form action="success" method="post">
 <?php foreach ($values as $value) { ?>
@@ -10,7 +10,7 @@ Client
 <input type="submit" value="Bestellen">
 </form>
 ```
-Server
+**Server**
 ```php
 for ($i = 0, $iMax = count($_POST['inputName'); $i < $iMax; $i++) {
 	$valuesArr[] = [
