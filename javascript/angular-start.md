@@ -15,13 +15,13 @@ js
 index.html
 ```
 
-### app.js - creating a new Module 
+### `app.js` creating a new Module 
 In app.js, create a new module named myApp. A module contains the different components of an AngularJS app.
 ```js 
 var app = angular.module("myApp", []);
 ```
 
-### index.html - Include the AngulareJS and add the module to html element
+### `index.html` Include the AngulareJS and add the module to html element
 
 ```html
 <head>
@@ -35,7 +35,7 @@ var app = angular.module("myApp", []);
 `ng-app` is called a directive. It tells AngularJS that the myApp module will live within the `<body>` element, 
 termed the application's scope. In other words, the `ng-app` directive is used to define the application scope.
 
-### MainController.js - add data to the controller
+### `MainController.js` add data to the controller
 In MainController.js a new controller named MainController is created. A controller manages the app's data.
 Here the property title is used to store a string, and attach it to $scope.
 
@@ -60,7 +60,7 @@ app.controller('MainController', ['$scope', function($scope)
 }
 ```
 
-### index.html - display data from the Controller 
+### `index.html` display data from the Controller 
 In index.html, we added `<div class="main" ng-controller="MainController">`. Like `ng-app`, `ng-controller` is a directive that 
 defines the controller scope. This means that properties attached to $scope in MainController become available to use within 
 `<div class="main">`.
@@ -137,3 +137,8 @@ $scope.minusOne = function(index){
 }
 }]);
 ```
+
+
+----
+##Source
+codecademy.com
