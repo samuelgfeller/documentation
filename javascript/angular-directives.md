@@ -163,5 +163,5 @@ app.directive('installApp', function() {
 
 
 ----
-##Source
-codecademy.com
+##Source  
+https://www.codecademy.com/de/courses/learn-angularjs

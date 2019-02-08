@@ -140,5 +140,5 @@ $scope.minusOne = function(index){
 
 
 ----
-##Source
-codecademy.com
+##Source  
+https://www.codecademy.com/fr/courses/learn-angularjs/
