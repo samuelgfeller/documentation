@@ -47,7 +47,7 @@ The CLI creates a new folder, src/app/heroes/, and generates the four files of t
 ```cmd
 ng generate component heroes
 ```
-The next steps explained in their [documentation](https://angular.io/tutorial/toh-pt1#selector)
+The next steps explained in their [example](https://angular.io/tutorial/toh-pt1#selector)
 
 
 ### Format string with pipe
