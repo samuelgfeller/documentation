@@ -49,6 +49,24 @@ ng generate component heroes
 ```
 The next steps explained in their [example](https://angular.io/tutorial/toh-pt1#selector)
 
+### Export
+Classes or something else can be exported from a `.ts` file. 
+
+#### Class
+```js
+export class Hero {
+    id: number;
+    name: string;
+}
+```
+#### const
+```
+export const HEROES: Hero[] = [
+    { id: 11, name: 'Mr. Nice' },
+    { id: 12, name: 'Narco' },
+    { id: 13, name: 'Bombasto' },
+];
+```
 
 ### Format string with pipe
 [Pipes](https://angular.io/guide/pipes) are a good way to format strings, currency amounts, dates and other display data.
