@@ -56,7 +56,7 @@ class Bill
  ```
 Advantage: You can change config values after including it and before it gets used
 for e.g. if you have a `customer_id` and it takes the id from the session but if you are logged in as administrator 
-you could change the `customer_id` manually. Also expressions allowed. 
+you could change the `customer_id` manually. Also expressions allowed.  
 Disadvantages: You have to write `self::$config = $GLOBALS['config']` in every function and the class has to have a 
 `static $config` variable declared 
 
