@@ -1,4 +1,4 @@
-# Ways to write and access config
+# How to write and access config values in php
 
 ## Config as array 
 
