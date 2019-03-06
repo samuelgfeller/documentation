@@ -40,8 +40,8 @@ Bill::print();
 ```
 
 ```php
- <?php
 // Bill.php
+<?php
 
 class Bill
 {
@@ -87,8 +87,8 @@ Bill::print();
 ```
 **In static methods**
 ```php
-<?php 
 // Bill.php
+<?php 
 
 class Bill
 {
