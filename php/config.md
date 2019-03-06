@@ -99,7 +99,7 @@ class Bill
 ?>
 ```
 
-Advantages: This is the simplest way I found so far and it can be accessed everywhere in the same way as long as it's not an expression 
+Advantages: This is the simplest way I found so far and it can be accessed everywhere in the same way as long as it's not an expression   
 Disadvantages: Expressions are not allowed (`const host = Class::getHost()`) and a `const` variable cannot be changed so as soon as it is defined in the `config class` it cannot be modified 
 
 ----
