@@ -64,7 +64,6 @@ Disadvantages: You have to write `self::$config = $GLOBALS['config']` in every f
 For this method the config file is not an array but a class and can be written like this
  ```php
 // Config.php
- 
 <?php
 class Config
 {
