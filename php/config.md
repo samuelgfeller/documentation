@@ -47,8 +47,8 @@ class Bill
 {
 	private static $config = false;
 	public static function print() {
-		// Import the var $config_id from the other namespace to the class
-		self::$config = $GLOBALS['config'];
+	// Import the var $config_id from the other namespace to the class
+	self::$config = $GLOBALS['config'];
         echo $config['database']['host'];
     }
 }
@@ -92,7 +92,7 @@ Bill::print();
 
 class Bill
 {
-	public static function print() {
+    public static function print() {
         echo Config::host;
     }
 }
