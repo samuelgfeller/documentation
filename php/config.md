@@ -107,3 +107,4 @@ https://stackoverflow.com/questions/4489134/php-class-global-variable-as-propert
 https://stackoverflow.com/questions/1957732/can-i-include-code-into-a-php-class   
 https://www.abeautifulsite.net/a-better-way-to-write-config-files-in-php  
 [Joel Kuder])(https://github.com/Lokutos)
+@Lokutos
