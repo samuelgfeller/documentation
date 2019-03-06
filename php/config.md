@@ -54,10 +54,10 @@ class Bill
 }
 ?>
  ```
-Advantage: You can change config values after including it and before it gets used
+**Advantage:** You can change config values after including it and before it gets used
 for e.g. if you have a `customer_id` and it takes the id from the session but if you are logged in as administrator 
-you could change the `customer_id` manually. Also expressions allowed.  
-Disadvantages: You have to write `self::$config = $GLOBALS['config']` in every function and the class has to have a 
+you could change the `customer_id` manually. Also expressions allowed.   
+**Disadvantages:** You have to write `self::$config = $GLOBALS['config']` in every function and the class has to have a 
 `static $config` variable declared 
 
 ## Config as class 
@@ -98,8 +98,8 @@ class Bill
 ?>
 ```
 
-Advantages: This is the simplest way I found so far and it can be accessed everywhere in the same way as long as it's not an expression   
-Disadvantages: Expressions are not allowed (`const host = Class::getHost()`) and a `const` variable cannot be changed so as soon as it is defined in the `config class` it cannot be modified 
+**Advantages:** This is the simplest way I found so far and it can be accessed everywhere in the same way as long as it's not an expression   
+**Disadvantages:** Expressions are not allowed (`const host = Class::getHost()`) and a `const` variable cannot be changed so as soon as it is defined in the `config class` it cannot be modified 
 
 ----
 #### Sources
