@@ -38,12 +38,13 @@ If the data comes from a remote server there is always a little delay. In the fo
 has to be available directly. It will work only in this example since we use mock heroes but if it takes the data 
 remotly there is going to be a problem.
 ```
+// bad
 getHeroes(): Hero[] {
   return HEROES;
 }
 ```
 Instead, we can use the Observable class from the [RxJS library](http://reactivex.io/rxjs/) which will get the data 
-asynchronously.
+asynchronously.  
 **Import Observable**
 ```
 //src/app/hero.service.ts 
