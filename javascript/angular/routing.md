@@ -60,4 +60,21 @@ It's another of the public directives in the RouterModule.
 </nav>
 ```
 
-parameterized route
+#### Parameterized Routes
+A URL like `~/detail/11` would be a good URL for navigating to the Hero Detail view of the hero whose id is 11.
+The path can be inserted like this in the `AppRoutingModule`:
+```
+{ path: 'detail/:id', component: HeroDetailComponent },
+```
+The colon (:) in the path indicates that :id is a placeholder for a specific hero id.
+
+##### Example parameterized route
+
+```
+<a *ngFor="let hero of heroes" class="col-1-4"
+    routerLink="/detail/{{hero.id}}">
+  <div class="module hero">
+    <h4>{{hero.name}}</h4>
+  </div>
+</a>
+``` 
