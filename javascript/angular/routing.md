@@ -60,7 +60,7 @@ It's another of the public directives in the RouterModule.
 </nav>
 ```
 
-#### Parameterized Routes
+### Parameterized Routes
 A URL like `~/detail/11` would be a good URL for navigating to the Hero Detail view of the hero whose id is 11.
 The path can be inserted like this in the `AppRoutingModule`:
 ```
