@@ -131,3 +131,55 @@ the whole object.
 
 ### Add new hero
 
+**Preparing the values to add it**
+
+[Example](https://angular.io/tutorial/toh-pt6#add-a-new-hero) of how a hero could be typed in via HTML Angular input.
+Basically adding an input with a click event and an `add()` function. 
+
+```html
+// src/app/heroes/heroes.component.html 
+
+<label>Hero name:
+  <input #heroName />
+</label>
+<!-- (click) passes input value to add() and then clears the input -->
+<button (click)="add(heroName.value); heroName.value=''">
+  add
+</button>
+``` 
+
+When the given name is non-blank, the handler creates a Hero-like object from the name (it's only missing the id) 
+and passes it to the services `addHero()` method.
+
+```js
+// src/app/heroes/heroes.component.ts
+
+add(name: string): void {
+  name = name.trim();
+  if (!name) { return; }
+  this.heroService.addHero({ name } as Hero)
+      // When addHero saves successfully, the subscribe callback receives the new hero and pushes it into to the heroes list for display
+      .subscribe(hero => {
+        this.heroes.push(hero);
+      });
+}
+```
+
+**Send the values of the new element to the webapi**
+
+```
+// src/app/hero.service.ts
+
+/** POST: add a new hero to the server */
+addHero (hero: Hero): Observable<Hero> {
+  return this.http.post<Hero>(this.heroesUrl, hero, httpOptions).pipe(
+    tap((newHero: Hero) => this.log(`added hero w/ id=${newHero.id}`)),
+    catchError(this.handleError<Hero>('addHero'))
+  );
+}
+```
+
+`HeroService.addHero()` differs from `updateHero` in two ways.
+* it calls `HttpClient.post()` instead of `put()`.
+* it expects the server to generate an id for the new hero, which it returns in the `Observable<Hero>` to the caller.
+
