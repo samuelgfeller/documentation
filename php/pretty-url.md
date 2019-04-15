@@ -100,7 +100,7 @@ A `base.html.php` could look like that:
 </body>
 </html>	
 ```
-* [Set up Flash messages](https://github.com/samuelgfeller/documentation/blob/master/flash-message.md)  
-* [Example of Navigation](https://github.com/samuelgfeller/documentation/blob/master/css-menu.md) 
+* [Set up Flash messages](flash-message.md)  
+* [Example of Navigation](css-menu.md) 
 ***
 Source: https://github.com/odan/glossar/blob/master/pretty-url.md
