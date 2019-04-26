@@ -20,20 +20,19 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 ```
 
 **Inject `HttpClient` into the constructor**
-```
-
+```js
 constructor(
   private http: HttpClient,
   private messageService: MessageService) { }
 ```
 
 **Define api URL**
-```
+```js
 private heroesUrl = 'api/heroes';  // URL to web api
 ```
 
 **Get elements from the server in an Observable**
-```
+```js
 getHeroes (): Observable<Hero[]> {
   return this.http.get<Hero[]>(this.heroesUrl)
 }
@@ -45,11 +44,11 @@ In practice, it will only return a single hero array
 To catch errors, you "pipe" the observable result from `http.get()` through an RxJS `catchError()` operator.
 
 Import `catchError` symbol from `rxjs/operators`
-```
+```js
 import { catchError, map, tap } from 'rxjs/operators';
 ```
 Extend the observable result with the `.pipe()` method and give it a `catchError()` operator
-```
+```js
 getHeroes (): Observable<Hero[]> {
   return this.http.get<Hero[]>(this.heroesUrl)
     .pipe(
@@ -95,7 +94,9 @@ getHero(id: number): Observable<Hero> {
   );
 }
 ```
-[`tap()` documentation](https://angular.io/tutorial/toh-pt6#tap-into-the-observable)
+[`tap()` documentation](https://angular.io/tutorial/toh-pt6#tap-into-the-observable): The HeroService methods will tap into the flow of observable values and send a message (via log()) to the message area at the bottom of the page.
+
+They'll do that with the RxJS tap operator, which looks at the observable values, does something with those values, and passes them along. The tap call back doesn't touch the values themselves.
 
 There are three significant differences from `getHeroes()`:
 * it constructs a request URL with the desired hero's `id`.
@@ -107,7 +108,7 @@ rather than an observable of hero arrays
 Make sure to pass the hero object as an argument while calling the `updateHero` function in the service 
 ([example](https://angular.io/tutorial/toh-pt6#update-heroes))
 
-```
+```js
 // src/app/hero.service.ts
 
 /** PUT: update the hero on the server */
@@ -167,7 +168,7 @@ add(name: string): void {
 
 **Send the values of the new element to the webapi**
 
-```
+```js
 // src/app/hero.service.ts
 
 /** POST: add a new hero to the server */
