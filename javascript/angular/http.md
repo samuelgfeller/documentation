@@ -82,7 +82,7 @@ private handleError<T> (operation = 'operation', result?: T) {
 ### Get one element by id
 Most web APIs support a get by id request in the form :baseURL/:id.
 
-```
+```js
 // src/app/hero.service.ts
 
 /** GET hero by id. Will 404 if id not found */
