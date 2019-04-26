@@ -94,7 +94,7 @@ getHero(id: number): Observable<Hero> {
   );
 }
 ```
-[`tap()` documentation](https://angular.io/tutorial/toh-pt6#tap-into-the-observable): The HeroService methods will tap into the flow of observable values and send a message (via log()) to the message area at the bottom of the page.
+[`tap()` documentation](https://angular.io/tutorial/toh-pt6#tap-into-the-observable): The HeroService methods will **tap** into the flow of observable values and send a message (via log()) to the message area at the bottom of the page.
 
 They'll do that with the RxJS tap operator, which looks at the observable values, does something with those values, and passes them along. The tap call back doesn't touch the values themselves.
 
@@ -183,4 +183,66 @@ addHero (hero: Hero): Observable<Hero> {
 `HeroService.addHero()` differs from `updateHero` in two ways.
 * it calls `HttpClient.post()` instead of `put()`.
 * it expects the server to generate an id for the new hero, which it returns in the `Observable<Hero>` to the caller.
+
+### Delete Hero
+
+Add delete button in HTML for each Hero
+
+```html
+<!-- src/app/heroes/heroes.component.html -->
+
+<ul class="heroes">
+  <li *ngFor="let hero of heroes">
+    <a routerLink="/detail/{{hero.id}}">
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </a>
+    <button class="delete" title="delete hero"
+      (click)="delete(hero)">x</button>
+  </li>
+</ul>
+```
+
+Add function in component
+```js
+// src/app/heroes/heroes.component.ts
+
+delete(hero: Hero): void {
+  this.heroes = this.heroes.filter(h => h !== hero);
+  this.heroService.deleteHero(hero).subscribe();
+}
+```
+Although the component delegates hero deletion to the HeroService, it remains responsible for updating its own list 
+of heroes. The component's delete() method immediately removes the hero-to-delete from that list, anticipating 
+that the HeroService will succeed on the server.
+
+There's really nothing for the component to do with the Observable returned by heroService.delete(). 
+**It must subscribe anyway.**
+
+> If you neglect to subscribe(), the service will not send the delete request to the server! As a rule, 
+an Observable does nothing until something subscribes!
+
+#### Delete on Webserver
+
+```js
+// src/app/hero.service.ts 
+
+/** DELETE: delete the hero from the server */
+deleteHero (hero: Hero | number): Observable<Hero> {
+  const id = typeof hero === 'number' ? hero : hero.id;
+  const url = `${this.heroesUrl}/${id}`;
+
+  return this.http.delete<Hero>(url, httpOptions).pipe(
+    tap(_ => this.log(`deleted hero id=${id}`)),
+    catchError(this.handleError<Hero>('deleteHero'))
+  );
+}
+```
+Note that
+
+* it calls HttpClient.delete.
+* the URL is the heroes resource URL plus the id of the hero to delete
+* you don't send data as you did with put and post.
+* you still send the httpOptions.
+
+
 
