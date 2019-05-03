@@ -1,5 +1,7 @@
 # Redirect URL to local project XAMPP
 
+SSL Certificate: https://shellcreeper.com/how-to-create-valid-ssl-in-localhost-for-xampp/ 
+
 ## Add entry in host
 `C:\Windows\System32\drivers\etc\hosts`
 ```
