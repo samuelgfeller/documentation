@@ -4,7 +4,7 @@
 This is where we will store our cert. In this example I will create “crt” folder. So we will have C:\xampp\apache\crt
 
 ## 3. Add this files.
-[cert.conf](https://gist.github.com/turtlepod/3b8d8d0eef29de019951aa9d9dcba546)
+[cert.conf](https://gist.github.com/turtlepod/3b8d8d0eef29de019951aa9d9dcba546)  
 [make-cert.bat](https://gist.github.com/turtlepod/e94928cddbfc46cfbaf8c3e5856577d0)
 ## 4. Edit cert.conf and Run make-cert.bat
 Change {{DOMAIN}} text using the domain we want to use, in this case site.test and save.
