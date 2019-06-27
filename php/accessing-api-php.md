@@ -17,6 +17,9 @@
 
     $response = curl_exec($curl);
     $err = curl_error($curl);
+    if (!empty($err)){
+        echo $err;
+    }
     curl_close($curl);
 
     $ip = json_decode($response, true)['ip'];
