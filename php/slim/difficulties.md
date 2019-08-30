@@ -20,5 +20,6 @@ However you can put PHP-DI in Slim manually thanks to PSR-11 (you won't get any 
 
 **Solution**  
 Bridge not needed anymore.    
-**Require  `"php-di/php-di": "^6.0" `**
-
+```
+composer require php-di/php-di
+```
