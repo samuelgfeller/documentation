@@ -26,27 +26,7 @@ RewriteRule ^ index.php [QSA,L]
 The Front-Controller gets the url and gives the path  
 The function `baseurl` and `hosturl` are optional but could be useful
 ```php
-function baseurl($path = '', $full = false) {
-	$scriptName = $_SERVER['SCRIPT_NAME'];
-	$baseUri = dirname(dirname($scriptName));
-	$result = str_replace('\\', '/', $baseUri) . $path;
-	$result = str_replace('//', '/', $result);
-	if ($full === true) {
-		$result = hosturl() . $result;
-	}
-	return $result;
-}
-function hosturl(){
-	$server = $_SERVER;
-	$host = $server['SERVER_NAME'];
-	$port = $server['SERVER_PORT'];
-	$result = (isset($server['HTTPS']) && $server['HTTPS'] != "off") ? "https://" : "http://";
-	$result .= ($port == '80' || $port == '443') ? $host : $host . ":" . $port;
-	return $result;
-}
-//
 // Get the URI path
-//
 $path = parse_url($_SERVER['REQUEST_URI'])['path'];
 $scriptName = dirname($_SERVER['SCRIPT_NAME']);
 $scriptName = dirname($scriptName);
@@ -120,7 +100,7 @@ A `base.html.php` could look like that:
 </body>
 </html>	
 ```
-* [Set up Flash messages](https://github.com/samuelgfeller/documentation/blob/master/flash-message.md)  
-* [Example of Navigation](https://github.com/samuelgfeller/documentation/blob/master/css-menu.md) 
+* [Set up Flash messages](flash-message.md)  
+* [Example of Navigation](../html_css/css-menu.md) 
 ***
 Source: https://github.com/odan/glossar/blob/master/pretty-url.md
