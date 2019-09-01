@@ -6,6 +6,7 @@ It includes
 * Definition of divers dependencies 
 * Definition of repositories (which are the direct interaction with the database) in order that they can be injected
 * Build of the app with the definitions in `index.php` 
+* How Service is injected into a controller
  
 ### Settings
 With Logger and db credentials  
@@ -93,7 +94,6 @@ $repositories($containerBuilder);
 // Build PHP-DI Container instance
 $container = $containerBuilder->build();
 
-
 // Set container to create App with on AppFactory
 AppFactory::setContainer($container);
 // Instantiate the app
@@ -121,6 +121,6 @@ class UserController extends Controller {
 
 ---
 ### Documentation / Source 
-Slim doc: http://www.slimframework.com/docs/v4/concepts/di.html
-Slim skeleton: https://github.com/slimphp/Slim-Skeleton  
+Slim doc: http://www.slimframework.com/docs/v4/concepts/di.html  
+Slim skeleton: https://github.com/slimphp/Slim-Skeleton   
 Article from Daniel Opitz: https://odan.github.io/2019/03/18/creating-your-first-slim-framework-application-part-2.html  
