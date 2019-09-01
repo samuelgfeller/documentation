@@ -1,12 +1,14 @@
 # Dependency Injection in Slim 4
 
-Example of how I implemented the injection of the different dependencies. 
+Example of how I implemented the injection of the different dependencies.   
 It includes
 * Settings with logger and db credentials 
 * Definition of divers dependencies 
 * Definition of repositories (which are the direct interaction with the database) in order that they can be injected
 * Build of the app with the definitions in `index.php` 
 * How Service is injected into a controller
+
+I should mention that I use `php-di/php-di`
  
 ### Settings
 With Logger and db credentials  
