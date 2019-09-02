@@ -9,10 +9,11 @@ app: https://odan.github.io/2019/03/18/creating-your-first-slim-framework-applic
 > Database transactions must be handled on a higher level (domain service) and not within a repository.
 ---
    
-
-   
-   
+**Architecture**
 Possible Architecture: https://jkphl.is/articles/clear-architecture-php/  
+
+**Security**
+https://glenneggleton.com/page/use-autowiring-with-slim-and-be-productive
   
   
 
