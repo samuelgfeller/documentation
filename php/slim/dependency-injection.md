@@ -120,6 +120,7 @@ class UserController extends Controller {
 }
 ```
 
+I had troubles to work with 2 database connections so I asked on StackOverflow and got a good Answer from Daniel Opitz: https://stackoverflow.com/questions/57758020/how-to-set-up-and-inject-multiple-pdo-database-connections-in-slim-4/57769575#57769575 
 
 ---
 ### Documentation / Source 
