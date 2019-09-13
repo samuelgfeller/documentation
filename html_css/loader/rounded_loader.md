@@ -13,7 +13,7 @@ Something like this will do it
 
 ### Show loader
 You can either put these spans directly in the HTML file with the style `display: none` until you want to show it 
-or populate the file jquery.   
+or populate the file using jquery.   
 `loader.js`
 ```js
 function showLoader() {
