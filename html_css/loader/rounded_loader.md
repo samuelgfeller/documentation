@@ -1,7 +1,46 @@
+# Pure css rounded loader
+
+### DOM container
+The first thing to do is write a `div` where the loader will be populated into.  
+Something like this will do it  
+
+`page.html`
+```html
+...
+<div id="loader"></div>
+...
+```
+
+### Show loader
+You can either put these spans directly in the HTML file with the style `display: none` until you want to show it 
+or populate the file jquery.   
+`loader.js`
+```js
+function showLoader() {
+    let html = '<span></span> ' +
+        '<span></span> ' +
+        '<span></span> ' +
+        '<span></span> ' +
+        '<span></span> ' +
+        '<span></span> ' +
+        '<span></span> ' +
+        '<span></span> ';
+    $('#loader').append(html);
+}
+```
+### Hide lodader 
+To hide you it can either set `display: none` or remove the `span`s entirely from the DOM with jquery
+```js
+ $('#loader').empty();
+```
+
+### Stylesheet
+
+`loader.css`
+```css
 :root{
     --factor: 5;
     --color: black;
-    /*#660066*/
 }
 #loader{
     height: 100px;
@@ -135,3 +174,4 @@
         transform: translate3d(0,calc(-25px*var(--factor)),0) rotate(90deg);
     }
 }
+```
