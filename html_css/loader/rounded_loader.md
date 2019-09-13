@@ -35,7 +35,7 @@ To hide you it can either set `display: none` or remove the `span`s entirely fro
 ```
 
 ### Stylesheet
-
+The size and color of the loader can be defined in the `--factor`and `--color` css vars.  
 `loader.css`
 ```css
 :root{
