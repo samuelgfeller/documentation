@@ -14,7 +14,7 @@ This function inserts data in the database using PDO prepared statements.
  */
 public static function insert($table, $data) {
     if ($conn = PdoConnection::instance()) {
-        $query = 'INSERT INTO ' . $table . ' (' . implode(', ', array_keys($data)) . ') 
+        $query = 'INSERT INTO `' . $table . '` (`' . implode('`, `', array_keys($data)) . '`) 
         VALUES (:' . implode(', :', array_keys($data)) . ');';
         $stmt = $conn->prepare($query);
         $stmt->execute($data);

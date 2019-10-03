@@ -15,12 +15,11 @@ the PDFShift methods like
 [this](https://github.com/samuelgfeller/documentation/blob/master/pdf/PDFShift/PDF.php).
 
 ### Installation of PHPMailer
-[Here](https://github.com/samuelgfeller/documentation/blob/master/PHPMailer/use_case_with_example.md) 
+[Here](https://github.com/samuelgfeller/documentation/blob/master/mail/PHPMailer/use_case_with_example.md) 
 is a short article on how to install PHPMailer
 
 ### Example to send a mail with an attachment created with PDFShift
-[PDF.php](https://github.com/samuelgfeller/documentation/blob/master/pdf/PDFShift/PDF.php)  
-[Email.php](https://github.com/samuelgfeller/documentation/blob/master/PHPMailer/Email.php)
+[Email.php](https://github.com/samuelgfeller/documentation/blob/master/mail/PHPMailer/Email.php)
 
 ```php 
 // Get HTML 

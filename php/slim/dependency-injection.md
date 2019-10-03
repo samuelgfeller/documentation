@@ -1,11 +1,14 @@
 # Dependency Injection in Slim 4
 
-Example of how I implemented the injection of the different dependencies. 
+Example of how I implemented the injection of the different dependencies.   
 It includes
 * Settings with logger and db credentials 
 * Definition of divers dependencies 
 * Definition of repositories (which are the direct interaction with the database) in order that they can be injected
 * Build of the app with the definitions in `index.php` 
+* How Service is injected into a controller
+
+I should mention that I use `php-di/php-di`
  
 ### Settings
 With Logger and db credentials  
@@ -93,7 +96,6 @@ $repositories($containerBuilder);
 // Build PHP-DI Container instance
 $container = $containerBuilder->build();
 
-
 // Set container to create App with on AppFactory
 AppFactory::setContainer($container);
 // Instantiate the app
@@ -118,9 +120,12 @@ class UserController extends Controller {
 }
 ```
 
+### Multiple instances of the same Class 
+
+I had troubles to work with 2 database connections so I asked on StackOverflow and got a good Answer from Daniel Opitz: https://stackoverflow.com/questions/57758020/how-to-set-up-and-inject-multiple-pdo-database-connections-in-slim-4/57769575#57769575 
 
 ---
 ### Documentation / Source 
-Slim doc: http://www.slimframework.com/docs/v4/concepts/di.html
-Slim skeleton: https://github.com/slimphp/Slim-Skeleton  
+Slim doc: http://www.slimframework.com/docs/v4/concepts/di.html  
+Slim skeleton: https://github.com/slimphp/Slim-Skeleton   
 Article from Daniel Opitz: https://odan.github.io/2019/03/18/creating-your-first-slim-framework-application-part-2.html  
