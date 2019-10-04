@@ -4,12 +4,12 @@
 A website with some improvements
 
 People of Google and WWW sat together and found 
-4 reasons why mobile applications are so popular over websites on mobile
-Fast  
-Integrated  
-Reliable - responsibility inside ui of app without any connection 
+4 reasons why mobile applications are so popular over websites on mobile  
+**F**ast  
+**I**ntegrated  
+**R**eliable - responsibility inside ui of app without any connection 
 (for eg. an email app you can read emails even if there is no network)  
-Engaging
+**E**ngaging
 
 
 ## Static files
