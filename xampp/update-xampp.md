@@ -27,3 +27,6 @@ Open *Everything* and type in `\xampp7.4.3\apache content:xampp` to search all f
 ### Step 4
 Open each file and replace the word `xampp` **when used as root path** with your custom name
 
+### Step 5
+Open XAMPP again and start apache
+
