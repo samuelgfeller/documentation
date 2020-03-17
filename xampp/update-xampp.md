@@ -7,6 +7,5 @@ This may be due to a blocked port, missing dependencies,
 improper privileges, a crash, or a shutdown by another method.  
 
 Which is caused by: 
-> 2020-03-17 11:09:15 0 [ERROR] Can't find messagefile 'C:\xampp\mysql\share\errmsg.sys'  
-2020-03-17 11:09:15 0 [ERROR] Aborting  
-httpd.exe: Syntax error on line 537 of C:/xampp7.4.3/apache/conf/httpd.conf: Syntax error on line 17 of C:/xampp7.4.3/apache/conf/extra/httpd-xampp.conf: Cannot load /xampp/php/php7ts.dll into server: Das angegebene Modul wurde nicht gefunden.
+> [ERROR] Can't find messagefile 'C:\xampp\mysql\share\errmsg.sys'  
+[ERROR] Aborting httpd.exe: Syntax error on line 537 of C:/xampp7.4.3/apache/conf/httpd.conf: Syntax error on line 17 of C:/xampp7.4.3/apache/conf/extra/httpd-xampp.conf: Cannot load /xampp/php/php7ts.dll into server: Das angegebene Modul wurde nicht gefunden.
