@@ -16,7 +16,8 @@ See what screen I'm on: `echo $STY`
 Quit screen: `screen -XS [session # you want to quit] quit`  
    
 **Launch server:**  
-`java -Xmx5G -Xms5G -XX:+UseConcMarkSweepGC -jar /home/mcsvr/spigot/spigot-1.15.2.jar`  
+`cd /home/mcsvr/spigot/`  
+`java -Xmx5G -Xms5G -XX:+UseConcMarkSweepGC -jar spigot-1.15.2.jar`  
   
 Stop server     
 `stop`
