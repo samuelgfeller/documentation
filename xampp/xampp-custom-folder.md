@@ -1,6 +1,6 @@
 # How to install XAMPP with a custom folder name on Windows
 
-Since there is no built in function to update XAMPP I like to name the folder with the PHP-Version like `/xampp7.4.3/`. This can be defined 
+Since there is no built in function to update XAMPP ([there is to update PHP](https://php.tutorials24x7.com/blog/how-to-update-php-version-in-xampp-on-windows)) I like to name the folder with the PHP-Version like `/xampp7.4.3/`. This can be defined 
 in the installer but it sill writes `/xampp/` in the apache config files so when starting apache XAMPP will display this error:
 > Error: Apache shutdown unexpectedly.  
 This may be due to a blocked port, missing dependencies,   
