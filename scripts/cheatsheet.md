@@ -9,7 +9,7 @@
 **Screen**  
 `screen -list`  
 Screen with name `screen -S "minecraf"`  
-Then press Ctrl+a (release) and then d to detach the process/screen (so it'll continue to run)  
+Then press `Ctrl+a` (release) and then `d` to detach the process/screen (so it'll continue to run)  
 To resume detached process, use:  
 `screen -r` followed by name or numeber or `CTRL+A+D`  
    
