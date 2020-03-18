@@ -12,6 +12,7 @@ Screen with name `screen -S "minecraf"`
 Then press `Ctrl+a` (release) and then `d` to detach the process/screen (so it'll continue to run)  
 To resume detached process, use:  
 `screen -r` followed by name or numeber or `CTRL+A+D`  
+See what screen I'm on: `echo $STY`  
    
 **Launch server:**  
 `java -Xmx5G -Xms5G -XX:+UseConcMarkSweepGC -jar /home/mcsvr/spigot/spigot-1.15.2.jar`  
