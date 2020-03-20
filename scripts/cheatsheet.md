@@ -46,3 +46,8 @@ Stop server
 [Wiki](https://github.com/lucko/LuckPerms/wiki/Usage)
 Give group access to command:  
 `lp group admin permission set minecraft.command.ban true`
+  
+**Multiverse**  
+[Wiki](https://github.com/Multiverse/Multiverse-Core/wiki/Permissions)  
+Allow user to enter world  
+`/lp <group/user> <group name or username> permission set multiverse.access.WORLDNAME true`
