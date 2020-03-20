@@ -54,3 +54,4 @@ Allow user to enter world
 
 #### Minecraft Places 
 Village `world`:    `260 -460` 
+Swamp `world`: `240 -170`
