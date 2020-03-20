@@ -3,6 +3,25 @@
 
 ### Webserver
 
+### Permissions
+Adding `-R` will execute the following commands recursively
+
+For a user `someusername` to be able to write in folder, that was initially made by root, you need to change the `rwx` permissions and/or the owner resp. group. If you restrict the permissions then `someusername` needs to be either owner or group member.
+
+If you do `chmod 777 /somefolder`, everyone can read and write, including `someusername`.
+
+If you do `chmod 770 /somefolder`, then `someusername` has to be member of the group owning `/somefolder` and you additionally have to do:
+
+    chgrp someusername /somefolder
+(assuming that there is a group `someusername` created when the user `someusername` was created, as is nowadays often the case. You can get the groups for `someusername` by typing `id someusername`). 
+
+If you do `chmod 700 /somefolder`, then `someusername` has to be owner of `/somefolder` and you additionally have to do:
+
+    chown someusername /somefolder
+
+For a directory you need the execute bit set in order to access files and directories inside that directory. Therefore `644` is seldom appropriate for a directory and `700`, `755`, `750` permissions are much more often seen on directories.
+[Source](https://unix.stackexchange.com/a/174793)
+
 ### Minecraft
 
 
