@@ -50,4 +50,7 @@ Give group access to command:
 **Multiverse**  
 [Wiki](https://github.com/Multiverse/Multiverse-Core/wiki/Permissions)  
 Allow user to enter world  
-`/lp <group/user> <group name or username> permission set multiverse.access.WORLDNAME true`
+`/lp <group/user> <group name or username> permission set multiverse.access.WORLDNAME true`  
+
+#### Minecraft Places 
+Village `world`:    `260 -460` 
