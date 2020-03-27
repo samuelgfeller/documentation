@@ -53,5 +53,6 @@ Allow user to enter world
 `/lp <group/user> <group name or username> permission set multiverse.access.WORLDNAME true`  
 
 #### Minecraft Places 
-Village `world`:    `260 -460` 
-Swamp `world`: `240 -170`
+Village `in world`:    `260 -460` 
+Swamp `in world`: `240 -170`
+House `in world`: `15 66 -316`
