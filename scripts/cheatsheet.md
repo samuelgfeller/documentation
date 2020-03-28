@@ -56,3 +56,5 @@ Allow user to enter world
 Village `in world`:    `260 -460` 
 Swamp `in world`: `240 -170`
 House `in world`: `15 66 -316`
+Spider spawner `in world`: `30 38 -178`
+Poisened Spider spawner `in world`: `1 35 -174`
