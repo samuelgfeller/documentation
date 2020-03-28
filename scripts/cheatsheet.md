@@ -53,10 +53,11 @@ Allow user to enter world
 `/lp <group/user> <group name or username> permission set multiverse.access.WORLDNAME true`  
 
 #### Minecraft Places 
-Village `in world`:    `260 -460` 
-Swamp `in world`: `240 -170`
-House `in world`: `15 66 -316`
-Spider spawner `in world`: `30 38 -178`
-Poisened Spider spawner `in world`: `1 35 -174`
-Zombie spawner `in world`: `44 26 -250`
-Zombie spawner `in world`: `-27 19 -141`
+Village `in world`:    `260 -460`   
+Swamp `in world`: `240 -170`  
+House `in world`: `15 66 -316`  
+Spider spawner `in world`: `30 38 -178`  
+Poisened Spider spawner `in world`: `1 35 -174`  
+Zombie spawner `in world`: `44 26 -250`  
+Zombie spawner `in world`: `-27 19 -141`  
+Horses `in world`: `50 66 100`
