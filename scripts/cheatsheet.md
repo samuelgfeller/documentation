@@ -64,3 +64,4 @@ Zombie spawner `in world`: `44 26 -250`
 Zombie spawner `in world`: `-27 19 -141`  
 Horses `in world`: `50 66 100`  
 Jungle `in world`: `-250 64 -90`
+Poisened Spider spawner `in world`: `84 43 -227`  
