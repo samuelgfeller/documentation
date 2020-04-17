@@ -66,3 +66,4 @@ Horses `in world`: `50 66 100`
 Jungle `in world`: `-250 64 -90`
 Poisened Spider spawner `in world`: `84 43 -227`  
 Blaze spawner `in nether_world`: `16 70 187`  
+Blaze spawner `in nether_world`: `-44 70 161`  
