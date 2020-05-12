@@ -1,5 +1,12 @@
 # Useful MySQL functions
 
+### Turn foreign key check off
+
+```sql
+SET FOREIGN_KEY_CHECKS=0;
+SET FOREIGN_KEY_CHECKS=1;
+```
+
 ### Add foreign key on existing table
 
 ```sql
