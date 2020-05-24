@@ -54,6 +54,9 @@ Give group access to command:
 Allow user to enter world  
 `/lp <group/user> <group name or username> permission set multiverse.access.WORLDNAME true`  
 
+### Potions
+https://static1.millenium.org/articles/3/56/24/3/@/1273086-20160229160932minecraft-brewing-en-amp_main_img-2.png
+
 #### Minecraft Places 
 Village `in world`:    `260 -460`   
 Swamp `in world`: `240 -170`  
