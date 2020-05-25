@@ -44,7 +44,7 @@ java -Xmx5G -Xms5G -XX:+UseConcMarkSweepGC -jar spigot-1.15.2.jar
 Stop server     
 `stop`
 
-**Permissions LuckyPerms**
+**Permissions LuckyPerms**  
 [Wiki](https://github.com/lucko/LuckPerms/wiki/Usage)
 Give group access to command:  
 `lp group admin permission set minecraft.command.ban true`
