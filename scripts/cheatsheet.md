@@ -50,12 +50,14 @@ Give group access to command:
 `lp group admin permission set minecraft.command.ban true`
   
 **Multiverse**  
-[Wiki](https://github.com/Multiverse/Multiverse-Core/wiki/Permissions)  
+[Wiki permissions](https://github.com/Multiverse/Multiverse-Core/wiki/Permissions)  
 Allow user to enter world  
 `/lp <group/user> <group name or username> permission set multiverse.access.WORLDNAME true`  
 
-### Potions
-https://static1.millenium.org/articles/3/56/24/3/@/1273086-20160229160932minecraft-brewing-en-amp_main_img-2.png
+**Links**  
+* [Potions](https://static1.millenium.org/articles/3/56/24/3/@/1273086-20160229160932minecraft-brewing-en-amp_main_img-2.png)  
+* [WorldEdit wiki](https://worldedit.enginehub.org/en/latest/commands/#biome-commands)
+
 
 #### Minecraft Places 
 Village `in world`:    `260 -460`   
