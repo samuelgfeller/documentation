@@ -2,6 +2,10 @@
 
 
 ### Webserver
+Test autorenew of cert. [doc](https://www.tecmint.com/secure-apache-with-lets-encrypt-ssl-certificate-on-centos-8/)
+```
+sudo /usr/local/bin/certbot-auto renew --dry-run
+```
 
 ### Permissions
 Adding `-R` will execute the following commands recursively
