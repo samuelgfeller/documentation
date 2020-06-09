@@ -61,7 +61,7 @@ Allow user to enter world
 **Links**  
 * [Potions](https://static1.millenium.org/articles/3/56/24/3/@/1273086-20160229160932minecraft-brewing-en-amp_main_img-2.png)  
 * [WorldEdit wiki](https://worldedit.enginehub.org/en/latest/commands/#biome-commands)
-* [Villager trades] (https://i.imgur.com/1Rb08Ua.png)
+* [Villager trades](https://i.imgur.com/1Rb08Ua.png)
 
 
 #### Minecraft Places 
