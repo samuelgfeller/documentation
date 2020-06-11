@@ -63,6 +63,9 @@ Allow user to enter world
 * [WorldEdit wiki](https://worldedit.enginehub.org/en/latest/commands/#biome-commands)
 * [Villager trades](https://i.imgur.com/1Rb08Ua.png)
 
+#### Plugins
+ * [Per world inventory](https://www.spigotmc.org/resources/per-world-inventory.4482/)
+ * Keep chunks
 
 #### Minecraft Places 
 Village `in world`:    `260 -460`   
