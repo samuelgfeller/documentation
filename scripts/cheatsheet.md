@@ -83,3 +83,27 @@ Blaze spawner `in nether_world`: `-44 70 161`
 Skeleton spawner `in world`: `234 43 -439`  
 Poisened Spider spawner `in world`: `230 18 -417`  
 Red temple `in nether`: `150 55 250`
+Double Poisened Spider spawner `in world`: `186 38 -227`   
+
+#### Best give commands
+https://www.digminecraft.com/generators/index.php
+```
+Helmet 
+/give @p diamond_helmet{Enchantments:[{id:protection,lvl:4},{id:respiration,lvl:3},{id:aqua_affinity,lvl:1},{id:thorns,lvl:3},{id:unbreaking,lvl:3},{id:mending,lvl:1}]} 1
+Chestplate 
+/give @p diamond_chestplate{Enchantments:[{id:protection,lvl:4},{id:thorns,lvl:3},{id:unbreaking,lvl:3},{id:mending,lvl:1}]} 2
+Leggings 
+/give @p diamond_leggings{Enchantments:[{id:protection,lvl:4},{id:thorns,lvl:3},{id:unbreaking,lvl:3},{id:mending,lvl:1}]} 2
+Boots 
+/give @p diamond_boots{Enchantments:[{id:soul_speed,lvl:3},{id:protection,lvl:4},{id:feather_falling,lvl:4},{id:thorns,lvl:3},{id:depth_strider,lvl:3},{id:unbreaking,lvl:3},{id:mending,lvl:1}]} 1
+Sword
+/give @p diamond_sword{display:{Name:"\"Excalibur II\""},Enchantments:[{id:smite,lvl:5},{id:knockback,lvl:2},{id:fire_aspect,lvl:2},{id:looting,lvl:3},{id:sweeping,lvl:3},{id:unbreaking,lvl:3},{id:mending,lvl:1}]} 1
+Bow
+/give @p bow{Enchantments:[{id:unbreaking,lvl:3},{id:power,lvl:4},{id:punch,lvl:2},{id:flame,lvl:1},{id:infinity,lvl:1}]} 1
+Pickaxe
+/give @p diamond_pickaxe{Enchantments:[{id:efficiency,lvl:5},{id:silk_touch,lvl:1},{id:unbreaking,lvl:3},{id:mending,lvl:1}]} 1
+Axe
+/give @p diamond_axe{Enchantments:[{id:smite,lvl:5},{id:efficiency,lvl:5},{id:silk_touch,lvl:1},{id:unbreaking,lvl:3},{id:mending,lvl:1}]} 1
+
+ 
+```
