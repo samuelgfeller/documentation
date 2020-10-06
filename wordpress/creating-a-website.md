@@ -1,5 +1,26 @@
 # Personal guide on creating a WP site with recommended add-ons 
 
+## Table of contents
+- [Installation](#installation)
+- [Plugins](#plugins)
+  * [Page builder - Elementor Pro](#page-builder---elementor-pro)
+  * [Custom login experience on WP - White label CMS](#custom-login-experience-on-wp---white-label-cms)
+  * [Google Analytics preview](#google-analytics-preview)
+  * [ManageWP](#managewp)
+- [Component location](#component-location)
+  * [Favicon](#favicon)
+  * [Header / Footer](#header---footer)
+  * [Frontpage, Homepage definition](#frontpage--homepage-definition)
+  * [Elementor](#elementor)
+    + [Global site settings](#global-site-settings)
+  * [Things about users](#things-about-users)
+    + [User registration & Elementor user roles](#user-registration---elementor-user-roles)
+    + [Limit sidebar elements for users](#limit-sidebar-elements-for-users)
+    + [Explainer video](#explainer-video)
+
+[Generated with markdown-toc](http://ecotrust-canada.github.io/markdown-toc)
+
+
 ## Installation 
 You have to install the Wordpress site on your host. cPanel uses 
 a tool called Softaculous. 
