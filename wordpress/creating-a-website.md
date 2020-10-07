@@ -3,9 +3,9 @@
 ## Table of contents
 - [Installation](#installation)
 - [Plugins](#plugins)
-  * [Page builder - Elementor Pro](#page-builder---elementor-pro)
-  * [Custom login experience on WP - White label CMS](#custom-login-experience-on-wp---white-label-cms)
-  * [Google Analytics preview](#google-analytics-preview)
+  * [Elementor Pro - Page builder](#elementor-pro---page-builder)
+  * [White label CMS - Custom login experience on WP](#white-label-cms---custom-login-experience-on-wp)
+  * [ExactMetrics - Google Analytics preview](#exactmetrics---google-analytics-preview)
   * [ManageWP](#managewp)
 - [Component location](#component-location)
   * [Favicon](#favicon)
@@ -26,14 +26,14 @@ You have to install the Wordpress site on your host. cPanel uses
 a tool called Softaculous. 
 
 ##  Plugins
-### Page builder - Elementor Pro
+### Elementor Pro - Page builder 
   
 1. Download elementor pro from **[GPLVault](https://www.gplvault.com/product-category/wordpress-plugins/elementor-pro/)**. 
 1. Go to the wordpress admin view and click on **Plugins**
 1. Click on **Add new** right next to the title *Plugins*
 1. Click on **Upload Plugin** right next to the title *Add Plugins*
 
-### Custom login experience on WP - White label CMS
+### White label CMS - Custom login experience on WP
 Custom logo and background image.  
 1. Go to [**Plugins - Add New**](https://i.imgur.com/LNO4a7c.png)  
 1. Type in *white label cms* and install it 
@@ -47,7 +47,7 @@ Custom logo and background image.
   
 **[Video tutorial](https://www.youtube.com/watch?v=YkdHRep3vr0&t=27s)** (until 3:28) from LivingWithPixels
 
-### Google Analytics preview
+### ExactMetrics - Google Analytics preview
 1. [Create Google Analytics account](https://support.google.com/analytics/answer/1009694?hl=de) under 
 Admin [Image](https://i.imgur.com/ExTjvEE.png)
 1. Install Plugin **ExactMetrics**
