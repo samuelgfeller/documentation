@@ -17,7 +17,7 @@
     + [User registration & Elementor user roles](#user-registration---elementor-user-roles)
     + [Limit sidebar elements for users](#limit-sidebar-elements-for-users)
     + [Explainer video](#explainer-video)
-
+ 
 [Generated with markdown-toc](http://ecotrust-canada.github.io/markdown-toc)
 
 
