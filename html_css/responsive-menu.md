@@ -1,4 +1,4 @@
-# Responsive menu
+# Classic responsive menu
 
 ### Stylesheet
 
