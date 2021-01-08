@@ -101,6 +101,6 @@ A `base.html.php` could look like that:
 </html>	
 ```
 * [Set up Flash messages](flash-message.md)  
-* [Example of Navigation](../html_css/css-menu.md) 
+* [Example of Navigation](../html-css/css-menu.md) 
 ***
 Source: https://github.com/odan/glossar/blob/master/pretty-url.md
