@@ -379,3 +379,8 @@ function handleIndicator(el) {
 
 </p>
 </details>  
+
+
+---
+
+Design greatly inspired from https://www.youtube.com/watch?v=agsR08aAO1w
