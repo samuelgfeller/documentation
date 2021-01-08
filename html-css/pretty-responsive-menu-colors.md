@@ -26,7 +26,7 @@ It is kinda complicated but works with pure JS.
         <span></span>
         <span></span>
     </div>
-    <span class="nav-indicator" id="nav-indicator"></span>
+    <span class="nav-indicator noAnimationOnPageLoad" id="nav-indicator"></span>
 </div>
 ```
 
