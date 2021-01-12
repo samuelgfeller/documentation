@@ -387,16 +387,7 @@ function handleIndicator(el) {
 </details>  
 
 
+---
 
-
-
-<details>
-<summary><b>Navbar middleware PHP (click to expand code)</b></summary>
-<p>
-
-```php
-
-```
-
-</p>
-</details>  
+Design greatly inspired from https://www.youtube.com/watch?v=agsR08aAO1w  
+And mobile: https://dribbble.com/shots/1007885-Dropdown-Navigation/attachments/1007885-Dropdown-Navigation
