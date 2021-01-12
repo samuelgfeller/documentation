@@ -11,7 +11,7 @@ It is kinda complicated but works with pure JS.
 <p>
 
 ```html
-<div id="nav" class="clearfix">
+<nav class="clearfix">
     <span id="brand-name-span">Slim Example Project</span>
     <a href="#" class="is-active" data-active-color="firebrick">Home</a>
     <a href="#" data-active-color="orange">Users</a>
@@ -26,7 +26,7 @@ It is kinda complicated but works with pure JS.
         <span></span>
         <span></span>
     </div>
-    <span class="nav-indicator" id="nav-indicator"></span>
+    <span class="nav-indicator no-animation-on-page-load" id="nav-indicator"></span>
 </div>
 ```
 
@@ -39,6 +39,13 @@ It is kinda complicated but works with pure JS.
 <p>
 
 ```css
+:root {
+    --nav-color: #7fbbd0;
+    --nav-text-color: #65818d;
+    /* With a 50px height on nav div */
+    --nav-icon-size: 0.8;
+}
+
 /* mobile first min-width sets base and content is adapted to computers. */
 @media (min-width: 100px) {
     /* Nav */
@@ -51,9 +58,8 @@ It is kinda complicated but works with pure JS.
         cursor: pointer;
     }
 
-    #nav {
+    nav {
         overflow: hidden;
-        /*background-color: #defeff;*/
         white-space: nowrap;
         position: relative;
         max-width: 100%;
@@ -65,24 +71,23 @@ It is kinda complicated but works with pure JS.
         height: 50px; /* fixed height to center nav-icon and bypass transition movement when opened*/
     }
 
-    #nav a {
+    nav a {
         float: left;
         display: block;
-        color: black;
+        color: var(--nav-text-color);
         text-align: center;
         padding: 20px 16px;
         text-decoration: none;
-        /*font-size: 17px;*/
         transition: 0.3s;
         width: 50%;
         position: relative;
     }
 
-    #nav a:hover {
+    nav a:hover {
         font-weight: normal; /*default hover over links makes it bold*/
     }
 
-    #nav a:before, #nav-indicator {
+    nav a:before, #nav-indicator {
         position: absolute;
         left: 15%;
         width: 70%;
@@ -91,7 +96,7 @@ It is kinda complicated but works with pure JS.
     }
 
     /* Similar than .nav-indicator */
-    #nav a:before {
+    nav a:before {
         content: "";
         bottom: -6px;
         background-color: #dfe2ea;
@@ -105,43 +110,44 @@ It is kinda complicated but works with pure JS.
         margin: auto;
         transition: 0.4s;
         z-index: 1;
-    }
-
-    #nav a {
+        background: var(--nav-color);
         display: none;
     }
 
-    #nav a.icon {
+    nav a {
+        display: none;
+    }
+
+    nav a.is-active{
+        color: black;
+    }
+
+    nav a.icon {
         float: right;
         display: block;
     }
 
-    #nav.open {
+    nav.open {
         height: auto;
     }
 
-    #nav.open .icon {
+    nav.open .icon {
         position: absolute;
         right: 0;
         top: 0;
     }
 
-    #nav.open a {
+    nav.open a {
         display: block;
     }
 
-    #nav a:not(.is-active):hover:before {
+    nav a:not(.is-active):hover:before {
         opacity: 1;
         bottom: 0;
     }
 
-    #nav a:not(.is-active):hover {
+    nav a:not(.is-active):hover {
         color: #333;
-    }
-
-    :root {
-        /* With a 50px height on nav div */
-        --nav-icon-size: 0.8;
     }
 
     #nav-icon {
@@ -182,21 +188,21 @@ It is kinda complicated but works with pure JS.
         top: calc(24px * var(--nav-icon-size));
     }
 
-    #nav.open #nav-icon span:nth-child(1) {
+    nav.open #nav-icon span:nth-child(1) {
         top: calc(12px * var(--nav-icon-size));
         width: 0;
         left: 50%;
     }
 
-    #nav.open #nav-icon span:nth-child(2) {
+    nav.open #nav-icon span:nth-child(2) {
         transform: rotate(45deg);
     }
 
-    #nav.open #nav-icon span:nth-child(3) {
+    nav.open #nav-icon span:nth-child(3) {
         transform: rotate(-45deg);
     }
 
-    #nav.open #nav-icon span:nth-child(4) {
+    nav.open #nav-icon span:nth-child(4) {
         top: calc(12px * var(--nav-icon-size));
         width: 0;
         left: 50%;
@@ -218,11 +224,11 @@ It is kinda complicated but works with pure JS.
 @media (min-width: 961px) {
     /* tablet, landscape iPad, lo-res laptops ands desktops */
 
-    #nav {
+    nav {
         display: block;
     }
 
-    #nav .icon {
+    nav .icon {
         display: none;
     }
 }
@@ -239,12 +245,12 @@ It is kinda complicated but works with pure JS.
         display: none;
     }
 
-    #nav {
+    nav {
         height: auto;
         border-radius: 999px;
     }
 
-    #nav a {
+    nav a {
         float: none;
         display: inline-block;
         color: black;
@@ -258,7 +264,7 @@ It is kinda complicated but works with pure JS.
         margin: 0 6px;
     }
 
-    #nav a:before, #nav-indicator {
+    nav a:before, #nav-indicator {
         width: auto;
         left: 0;
 
@@ -277,16 +283,16 @@ It is kinda complicated but works with pure JS.
 ```javascript
 // Prevent animation on page load for active element
 window.onload = function () {
-    let elements = document.getElementsByClassName("noAnimationOnPageLoad");
+    let elements = document.getElementsByClassName("no-animation-on-page-load");
     // elements is a HTMLCollection and does not have forEach method. It has to be converted as array before
     Array.from(elements).forEach(function (element) {
-        element.classList.remove("noAnimationOnPageLoad");
+        element.classList.remove("no-animation-on-page-load");
     });
 }
 // Navigation bar
-let nav = document.getElementById("nav");
+let nav = document.querySelector("nav");
 let indicator = document.getElementById('nav-indicator');
-let items = document.querySelectorAll('#nav a');
+let items = document.querySelectorAll('nav a');
 
 // Cannot use entire nav because then it collapses on each click on a menu element since its also in nav
 document.getElementById("nav-icon").addEventListener("click", toggleMobileNav);
@@ -375,6 +381,21 @@ function handleIndicator(el) {
     el.classList.add('is-active');
     el.style.color = el.dataset.activeColor;
 }
+```
+
+</p>
+</details>  
+
+
+
+
+
+<details>
+<summary><b>Navbar middleware PHP (click to expand code)</b></summary>
+<p>
+
+```php
+
 ```
 
 </p>
