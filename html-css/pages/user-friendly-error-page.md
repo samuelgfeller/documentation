@@ -276,3 +276,7 @@ Please try again and then <a href="mailto:contact@samuel-gfeller.ch">contact me<
     <a href="<?= $route->urlFor('hello') ?>" class="btn">Go back home</a>
 </section>
 ```
+
+-----
+### Source
+Clouds: https://lauryndbrown.github.io/2017/06/08/creating-clouds-in-css.html
