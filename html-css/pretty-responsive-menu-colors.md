@@ -303,7 +303,7 @@ document.getElementById("brand-name-span").addEventListener("click", toggleMobil
 let isMobile = true;
 
 // Fix for indicator glitch at page load
-window.onload = function () {
+window.addEventListener("load",function(event) {
     // At 1025px the menu is in desktop version and not collapsed.
     if (window.matchMedia("(min-width: 1025px)").matches) {
         isMobile = false;
@@ -313,7 +313,7 @@ window.onload = function () {
         // Has to be called even if mobile because of the color change of the burger icon.
         loopOverItems();
     }
-};
+});
 
 window.addEventListener('resize', function () {
     let oldIsMobile = isMobile;
