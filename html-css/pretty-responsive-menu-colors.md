@@ -281,14 +281,6 @@ It is kinda complicated but works with pure JS.
 <p>
 
 ```javascript
-// Prevent animation on page load for active element
-window.onload = function () {
-    let elements = document.getElementsByClassName("no-animation-on-page-load");
-    // elements is a HTMLCollection and does not have forEach method. It has to be converted as array before
-    Array.from(elements).forEach(function (element) {
-        element.classList.remove("no-animation-on-page-load");
-    });
-}
 // Navigation bar
 let nav = document.querySelector("nav");
 let indicator = document.getElementById('nav-indicator');
@@ -302,15 +294,25 @@ document.getElementById("brand-name-span").addEventListener("click", toggleMobil
 // multiple times on resize and there is a bug when click event calls handleIndicator with isMobile true [SLE-63]
 let isMobile = true;
 
-// At 1025px the menu is in desktop version and not collapsed.
-if (window.matchMedia("(min-width: 1025px)").matches) {
-    isMobile = false;
-    loopOverItems();
-}else{
-    isMobile = true;
-    // Has to be called even if mobile because of the color change of the burger icon.
-    loopOverItems();
-}
+// Fix for indicator glitch at page load
+window.addEventListener("load",function(event) {
+    // Prevent animation on page load for active element
+    let elements = document.getElementsByClassName("no-animation-on-page-load");
+    // elements is a HTMLCollection and does not have forEach method. It has to be converted as array before
+    Array.from(elements).forEach(function (element) {
+        element.classList.remove("no-animation-on-page-load");
+    });
+    
+    // At 1025px the menu is in desktop version and not collapsed.
+    if (window.matchMedia("(min-width: 1025px)").matches) {
+        isMobile = false;
+        loopOverItems();
+    }else{
+        isMobile = true;
+        // Has to be called even if mobile because of the color change of the burger icon.
+        loopOverItems();
+    }
+});
 
 window.addEventListener('resize', function () {
     let oldIsMobile = isMobile;
