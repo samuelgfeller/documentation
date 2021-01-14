@@ -302,15 +302,18 @@ document.getElementById("brand-name-span").addEventListener("click", toggleMobil
 // multiple times on resize and there is a bug when click event calls handleIndicator with isMobile true [SLE-63]
 let isMobile = true;
 
-// At 1025px the menu is in desktop version and not collapsed.
-if (window.matchMedia("(min-width: 1025px)").matches) {
-    isMobile = false;
-    loopOverItems();
-}else{
-    isMobile = true;
-    // Has to be called even if mobile because of the color change of the burger icon.
-    loopOverItems();
-}
+// Fix for indicator glitch at page load
+window.onload = function () {
+    // At 1025px the menu is in desktop version and not collapsed.
+    if (window.matchMedia("(min-width: 1025px)").matches) {
+        isMobile = false;
+        loopOverItems();
+    }else{
+        isMobile = true;
+        // Has to be called even if mobile because of the color change of the burger icon.
+        loopOverItems();
+    }
+};
 
 window.addEventListener('resize', function () {
     let oldIsMobile = isMobile;
