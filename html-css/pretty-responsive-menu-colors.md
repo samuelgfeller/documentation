@@ -281,14 +281,6 @@ It is kinda complicated but works with pure JS.
 <p>
 
 ```javascript
-// Prevent animation on page load for active element
-window.onload = function () {
-    let elements = document.getElementsByClassName("no-animation-on-page-load");
-    // elements is a HTMLCollection and does not have forEach method. It has to be converted as array before
-    Array.from(elements).forEach(function (element) {
-        element.classList.remove("no-animation-on-page-load");
-    });
-}
 // Navigation bar
 let nav = document.querySelector("nav");
 let indicator = document.getElementById('nav-indicator');
@@ -304,6 +296,13 @@ let isMobile = true;
 
 // Fix for indicator glitch at page load
 window.addEventListener("load",function(event) {
+    // Prevent animation on page load for active element
+    let elements = document.getElementsByClassName("no-animation-on-page-load");
+    // elements is a HTMLCollection and does not have forEach method. It has to be converted as array before
+    Array.from(elements).forEach(function (element) {
+        element.classList.remove("no-animation-on-page-load");
+    });
+    
     // At 1025px the menu is in desktop version and not collapsed.
     if (window.matchMedia("(min-width: 1025px)").matches) {
         isMobile = false;
