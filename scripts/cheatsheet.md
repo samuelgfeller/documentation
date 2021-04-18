@@ -104,6 +104,14 @@ Pickaxe
 /give @p diamond_pickaxe{Enchantments:[{id:efficiency,lvl:5},{id:silk_touch,lvl:1},{id:unbreaking,lvl:3},{id:mending,lvl:1}]} 1
 Axe
 /give @p diamond_axe{Enchantments:[{id:smite,lvl:5},{id:efficiency,lvl:5},{id:silk_touch,lvl:1},{id:unbreaking,lvl:3},{id:mending,lvl:1}]} 1
-
  
+```
+#### Also best give commands
+```
+/give emillycami netherite_sword{Enchantments:[{id:sharpness,lvl:5},{id:knockback,lvl:2},{id:fire_aspect,lvl:2},{id:looting,lvl:3},{id:sweeping,lvl:3},{id:unbreaking,lvl:3},{id:mending,lvl:1}]} 1
+/give emillycami bow{Enchantments:[{id:unbreaking,lvl:3},{id:power,lvl:5},{id:punch,lvl:2},{id:flame,lvl:1},{id:mending,lvl:1}]} 1
+/give emillycami netherite_helmet{Enchantments:[{id:protection,lvl:4},{id:respiration,lvl:3},{id:aqua_affinity,lvl:1},{id:unbreaking,lvl:2},{id:mending,lvl:1}]} 1
+/give emillycami netherite_chestplate{Enchantments:[{id:protection,lvl:4},{id:thorns,lvl:3},{id:unbreaking,lvl:3},{id:mending,lvl:1}]} 1
+/give emillycami netherite_leggings{Enchantments:[{id:protection,lvl:4},{id:thorns,lvl:3},{id:unbreaking,lvl:3},{id:mending,lvl:1}]} 1
+/give emillycami netherite_boots{Enchantments:[{id:soul_speed,lvl:3},{id:protection,lvl:4},{id:feather_falling,lvl:4},{id:thorns,lvl:3},{id:depth_strider,lvl:3},{id:unbreaking,lvl:3},{id:mending,lvl:1}]} 1
 ```
