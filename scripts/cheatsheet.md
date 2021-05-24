@@ -27,7 +27,7 @@ For a directory you need the execute bit set in order to access files and direct
 [Source](https://unix.stackexchange.com/a/174793)
 
 ### Minecraft
-** Install server on Centos 8 **
+**Install server on Centos 8**  
 https://www.spinup.com/setting-up-a-minecraft-server-on-centos-8/
 
 **Screen**  
