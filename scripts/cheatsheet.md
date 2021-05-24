@@ -28,7 +28,8 @@ For a directory you need the execute bit set in order to access files and direct
 
 ### Minecraft
 **Install server on Centos 8**  
-https://www.spinup.com/setting-up-a-minecraft-server-on-centos-8/
+Spigot: https://extravm.com/billing/knowledgebase/20/Setup-Spigot-Minecraft-Server-on-CentOS.html  
+Without spigot: https://www.spinup.com/setting-up-a-minecraft-server-on-centos-8/
 
 **Screen**  
 `screen -list`  
