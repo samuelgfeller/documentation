@@ -7,6 +7,13 @@ Appears when calling an invokable class directly in the router.
 composer dump-autoload -o
 ```
 
+### PHPMailer error: Data not accepted.
+To find out the cause of the issue, add the following right before the `send()` function.
+```php
+$PHPMailer->SMTPDebug = true;
+```
+My issue was with mailgun because I tried to send to an email with the sandbox domain to an address was not registered and verified previously (which is needed for the sanbox testing) 
+
 ### Container with slim 4:
 #### Report 1 & 2
 **Problem:** there's no DI-Bridge in my case. Do you know if that's going to be supported for v4 anytime soon?  
@@ -23,3 +30,5 @@ Bridge not needed anymore.
 ```
 composer require php-di/php-di
 ```
+
+
