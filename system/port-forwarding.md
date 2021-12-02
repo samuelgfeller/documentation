@@ -7,7 +7,7 @@ To my current understanding, a program (like Putty or a console with ssh -L) wil
 ## How to setup with Putty
 
 ### Bind remote database to local port 
-The SQL Server sqlserver.domain.ch can be accessed with an SSH tunnel to server.domain.ch.   
+The SQL Server `sqlserver.domain.ch` can be accessed with an SSH tunnel to `server.domain.ch`.   
 Now let's assume we want to make a connection to this database from the code, it would be hard (even if possible) to make an SSH tunnel there. A simple option is to use 
 [Putty](https://putty.org). 
 
@@ -22,8 +22,6 @@ Now let's assume we want to make a connection to this database from the code, it
 <img width="500" alt="Don't start a shell or command at all" src="https://i.imgur.com/IcbTOkn.png">   
 
 #### Port forwarding   
-
-
 
 <img width="500" alt="Forwarding" src="https://i.imgur.com/d9G8EPD.png">     
 
@@ -49,7 +47,7 @@ $config = [
 
 $dsn = 'mysql:host=' . $config['host'] . ';port=' . $config['port'] . ';dbname=' . $config['database'].';';
 $options = [/* ... */];
-return new PDO($dsn, $config['username'], $config['password'], $options);
+$connection = new PDO($dsn, $config['username'], $config['password'], $options);
 ```
 
 At the same time a local MySQL db can be running and accessed with the only difference beside the obvious database, username and password being the port number. 
