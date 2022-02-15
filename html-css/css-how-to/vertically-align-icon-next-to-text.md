@@ -1,5 +1,7 @@
 # How to vertically align an icon next to a `span`?
 
+![preview](https://i.imgur.com/hlCWSLu.png)
+
 ### HTML
 ```html
 <div>
