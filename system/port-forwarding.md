@@ -1,8 +1,7 @@
 # Port forwarding for noobs (like me)
 
 ## Functionning
-To my current understanding, a program (like Putty or a console with ssh -L) will "bind" a specific server connection (so the remote host and port) to a local port meaning 
-`127.0.0.1:portnr`. Through this port (and localhost as hostname), the remote host can be accessed. 
+To my current understanding, a program (like Putty or a console with ssh -L) will "bind" a specific server connection (so the remote host and port) to a local port meaning through this port (and localhost as hostname) `127.0.0.1:portnr`, the remote host can be accessed. 
 
 ## How to setup with Putty
 
