@@ -1,5 +1,11 @@
 # GIT cheatsheet
 
+### Undo most recent comit
+```bash
+git reset HEAD~
+```
+Source: https://stackoverflow.com/a/927386/9013718
+
 ### Using github in CLI with access token and HTTPS
 All the functions work when adding `<GITHUB_ACCESS_TOKEN>@` before the repo link.  
 Examples:   
