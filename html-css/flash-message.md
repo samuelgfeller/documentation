@@ -430,8 +430,12 @@ I use [PHP-View](https://github.com/slimphp/PHP-View) in combination with
 
 ## Other flash design 
 
-### Preview
+  <details>
+  <summary><h3>Preview</h3></summary>
+    
 ![Gif of flash messages](https://i.imgur.com/PlN5XB1.gif)
+    
+  </details>
 
 ## CSS
 
