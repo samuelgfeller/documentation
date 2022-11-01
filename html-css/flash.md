@@ -43,7 +43,9 @@ File: `layout.html.php`
 File: `flash.css`
 ```css
 #flash-container {
-    float: right;
+    right: 50px;
+    position: fixed;
+    z-index: 101; 
 }
 
 .flash {
