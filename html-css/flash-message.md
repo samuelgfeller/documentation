@@ -44,6 +44,11 @@
     color: #6e6e6e;
     cursor: pointer;
     align-self: flex-start;
+    display: none;
+}
+/* Display close button only on hover */
+.flash:hover .flash-close-btn{
+    display: block;
 }
 
 /* Color / icon part of flash */
