@@ -12,6 +12,7 @@
 For the php 8.1 to 8.2 upgrade, the `apache` folder of the new xampp had to be copied as well. 
 1. Rename old `apache` folder
 2. Copy `apache` folder from freshly installed xampp folder and put it in `c:\xampp`
-3. Replace the files from the new `apache` folder with those from the old one that had a special configuration (`httpd.conf` and `extra\httpd-vhosts.conf`)   
+3. Replace the files from the new `apache` folder with those from the old one that had a special configuration (`httpd.conf` and `extra\httpd-vhosts.conf`)
+4. Open the `C:\xampp\apache\conf\extra\httpd-xampp.conf` file and replace the xampp path of the installed directory (e.g. `xampp8.3`) with `xampp` with search and replace
 
 For MySql its pretty similar except I would do a database dump 
