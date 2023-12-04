@@ -4,7 +4,7 @@
 2. Install xampp to a new path e.g. "c:\xampp8.3"
 3. Rename the `php` folder in the `xampp` folder
 4. Copy the `php` folder from the new xampp folder and add it to the `c:\xampp\php` folder
-5. The `php.ini` of the old php folder cannot be taken unfortunately, it creates a stack overflow error so everything that was changed in the old `php.ini` has to be adapted in the new one.
+5. The `php.ini` of the old php folder cannot be taken unfortunately, it creates a stack overflow error so everything that was changed in the old `php.ini` has to be adapted in the new one (`memory_limit`, xdebug config, enabled `extension`, etc.)
 6. Download the thread safe (TS) xdebug for the new php version https://xdebug.org/download
 7. Put it into `php\ext` and adapt the name in `php.ini`
 
