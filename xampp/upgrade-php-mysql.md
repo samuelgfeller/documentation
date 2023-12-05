@@ -8,8 +8,12 @@ There was problem after problem when trying to update php without installing the
 5. Transfer everything needed from the old xampp folder
     * `htdocs` folder content
     * `apache/conf/httpd.conf`, `apache/conf/extra/httpd-vhosts.conf`
-    * `php.ini` - install new xdebug
+    * `php.ini` (`memory_limit`, enabled `extension`, etc.) 
+    * Download the thread safe (TS) xdebug for the new php version https://xdebug.org/download
+    * Put it into `php\ext` and adapt the name in `php.ini`
 7. Start apache service
+8. Update `github/build.yml` php version
+
    
 
 ## Update PHP or MySql without updating xampp
