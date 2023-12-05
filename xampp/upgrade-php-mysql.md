@@ -1,4 +1,18 @@
-## Update PHP or MySql
+## Update xampp
+There was problem after problem when trying to update php without installing the whole new xampp so I would actually recommend to just download the new xampp and transfer the config over there even if its very annoying. Insane that there is no way of updating xampp without loosing all the apache/php configuration, database and htdocs.
+
+1. Open Services.msc
+2. Stop the service `Apache`
+3. Rename the `c:/xampp` folder
+4. Download latest xampp installer https://www.apachefriends.org/download.html and install it
+5. Transfer everything needed from the old xampp folder
+    * `htdocs` folder content
+    * `apache/conf/httpd.conf`, `apache/conf/extra/httpd-vhosts.conf`
+    * `php.ini` - install new xdebug
+7. Start apache service
+   
+
+## Update PHP or MySql without updating xampp
 
 1. Download latest xampp installer https://www.apachefriends.org/download.html
 2. Install xampp to a new path e.g. "c:\xampp8.3"
